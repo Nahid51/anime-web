@@ -12,7 +12,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const AnimeData = ({ data }) => {
-    const { image, title, description, original_title, original_title_romanised, rt_score, director, producer, release_date, running_time } = data;
+    const { image, title, description, original_title, original_title_romanised, rt_score, director, producer, release_date, running_time, people } = data;
     const rating = Number(rt_score / 20)
 
     return (
@@ -61,19 +61,17 @@ const AnimeData = ({ data }) => {
 
                             <Grid container>
                                 <Grid item xs={12} sm={6} md={6}>
-                                    <Item sx={{ backgroundColor: "#1C1C1C" }}>
-                                        <Typography>Director: {director}</Typography>
-                                        <Typography>Producer: {producer}</Typography>
-                                        <Typography>Release date: {release_date}</Typography>
-                                        <Typography>Running time: {running_time} min</Typography>
+                                    <Item sx={{ backgroundColor: "#1C1C1C", boxShadow: 0 }}>
+                                        <Typography>Director: <span style={{ color: "#8555cc" }}>{director}</span></Typography>
+                                        <Typography>Producer: <span style={{ color: "#8555cc" }}>{producer}</span></Typography>
+                                        <Typography>Release date: <span style={{ color: "#8555cc" }}>{release_date}</span></Typography>
+                                        <Typography>Running time: <span style={{ color: "#8555cc" }}>{running_time} min</span></Typography>
                                     </Item>
                                 </Grid>
+
                                 <Grid item xs={12} sm={6} md={6}>
-                                    <Item sx={{ backgroundColor: "#1C1C1C" }}>
-                                        <Typography>{director}</Typography>
-                                        <Typography>{producer}</Typography>
-                                        <Typography>{release_date}</Typography>
-                                        <Typography>{running_time}</Typography>
+                                    <Item sx={{ backgroundColor: "#1C1C1C", boxShadow: 0 }}>
+                                        <Typography>Total Chracter: <span style={{ color: "#8555cc" }}>{people?.length}</span></Typography>
                                     </Item>
                                 </Grid>
                             </Grid>

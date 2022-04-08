@@ -24,7 +24,7 @@ const SingleAnime = () => {
 
 
     return (
-        <div style={{ backgroundColor: "black" }}>
+        <div style={{ backgroundColor: "black", padding: "2rem 0" }}>
             <Container maxWidth="xl">
                 <Box sx={{ flexGrow: 1 }}>
                     {

@@ -8,4 +8,25 @@
 
 .App {
   font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
+.MyScrollBar {
+  height: 10rem;
+}
+
+.MyScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .MyScrollBar {
+    height: 10rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .MyScrollBar {
+    height: 5rem;
+  }
 }
