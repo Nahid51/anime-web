@@ -78,7 +78,6 @@ const Hero = () => {
                         </SwiperSlide>
                     ))
                 }
-
             </Swiper>
         </>
     );
