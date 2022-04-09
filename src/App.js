@@ -7,6 +7,7 @@ import {
 import Home from './components/Home/Home';
 import SingleAnime from './components/SingleAnime/SingleAnime';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/singleAnime/:id" element={<SingleAnime />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

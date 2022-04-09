@@ -3,6 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import { Avatar, Box, IconButton, Menu, MenuItem, Tooltip } from '@mui/material';
 
 
 const Navbar = () => {
@@ -29,7 +30,13 @@ const Navbar = () => {
                         AnimeWeb
                     </Typography>
 
-
+                    <Box sx={{ flexGrow: 0, ml: 'auto' }}>
+                        <Tooltip title="Open settings">
+                            <IconButton sx={{ p: 0 }}>
+                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                            </IconButton>
+                        </Tooltip>
+                    </Box>
                 </Toolbar>
             </Container>
         </AppBar>
