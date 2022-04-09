@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { Avatar, Box, IconButton, Menu, MenuItem, Tooltip } from '@mui/material';
+import { Avatar, Box, IconButton, Tooltip } from '@mui/material';
 
 
 const Navbar = () => {
